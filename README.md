@@ -20,7 +20,7 @@ A modern quiz application built with **Next.js 15+** that lets users take short,
 
 ## 🛠️ Tech Stack
 
-- **Framework:** Next.js 14 (App Router)
+- **Framework:** Next.js 15
 - **Language:** JavaScript (ES6+)
 - **Styling:** Tailwind CSS
 - **State:** React `useState`
