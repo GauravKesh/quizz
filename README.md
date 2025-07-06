@@ -1,6 +1,6 @@
 # 🧠 Micro-Quiz Platform
 
-A modern quiz application built with **Next.js 14 App Router** that lets users take short, topic-specific quizzes.
+A modern quiz application built with **Next.js 15+** that lets users take short, topic-specific quizzes.
 
 
 ---
