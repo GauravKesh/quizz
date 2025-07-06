@@ -2,9 +2,6 @@
 
 A modern quiz application built with **Next.js 14 App Router** that lets users take short, topic-specific quizzes.
 
-## 🚀 Live Demo
-
-> [Live Preview](https://quizz-eta-ecru.vercel.app/)
 
 ---
 
@@ -28,7 +25,6 @@ A modern quiz application built with **Next.js 14 App Router** that lets users t
 - **Styling:** Tailwind CSS
 - **State:** React `useState`
 - **API:** Mocked with `app/api/`
-- **Hosting:** Vercel
 
 ---
 
