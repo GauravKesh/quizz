@@ -34,19 +34,74 @@ A modern quiz application built with **Next.js 14 App Router** that lets users t
 
 ## 📂 Folder Structure
 
-src/
-├── app/
-│ ├── page.js (Home)
-│ ├── quizzes/[category]/page.js (Category SSR)
-│ ├── quiz/[id]/page.js (Quiz SSR)
-│ └── api/... (Mock API routes)
-├── components/ (Reusable UI)
-├── data/mockData.js (Static quiz data)
-├── styles/globals.css
+```bash
+.
+├── eslint.config.mjs
+├── jsconfig.json
+├── next-env.d.ts
+├── next.config.mjs
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── public
+│   ├── file.svg
+│   ├── globe.svg
+│   ├── images
+│   │   ├── arts.jpeg
+│   │   ├── geography.jpg
+│   │   ├── history.jpeg
+│   │   ├── literature.jpeg
+│   │   ├── math.jpg
+│   │   ├── movies.jpeg
+│   │   ├── programming.jpg
+│   │   ├── science.jpg
+│   │   ├── sports.jpeg
+│   │   └── technology.jpeg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+├── README.md
+├── src
+│   ├── app
+│   │   ├── api
+│   │   │   ├── categories
+│   │   │   │   └── route.js
+│   │   │   ├── quiz
+│   │   │   │   └── [id]
+│   │   │   │       └── route.js
+│   │   │   └── quizzes
+│   │   │       └── route.js
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.js
+│   │   ├── page.js
+│   │   ├── quiz
+│   │   │   └── [id]
+│   │   │       ├── loading.js
+│   │   │       └── page.js
+│   │   └── quizzes
+│   │       └── [category]
+│   │           ├── loading.js
+│   │           └── page.js
+│   ├── components
+│   │   ├── layouts
+│   │   │   └── Navbar.jsx
+│   │   └── ui
+│   │       ├── CategoryCard.jsx
+│   │       ├── HomePage.jsx
+│   │       ├── LoaderUi.jsx
+│   │       ├── QuestionCard.jsx
+│   │       ├── QuizCard.jsx
+│   │       ├── QuizList.jsx
+│   │       ├── QuizRunner.jsx
+│   │       └── ScoreCard.jsx
+│   └── data
+│       └── mockData.js
+└── tsconfig.json
 
-yaml
-Copy
-Edit
+```
+
+
 
 ---
 
@@ -87,10 +142,10 @@ Fully dynamic URLs via App Router ([category], [id]).
 generateMetadata() used in all dynamic pages.
 
 🤖 AI Tooling
-Used ChatGPT 4 for scaffolding code patterns, API shape, and state logic recommendations. All logic was customized and structured manually.
+Used ChatGPT 4 and Claude occasionally to brainstorm structure and patterns. Most of the implementation , including business logic, API design, and state management  was written and refined manually. AI was mainly used to speed up repetitive tasks or resolve minor issues.
 
 ✅ Future Enhancements
-✅ Add timer per question
+⬜ Add timer per question
 
 ⬜ Persist user scores to local storage
 
@@ -98,13 +153,3 @@ Used ChatGPT 4 for scaffolding code patterns, API shape, and state logic recomme
 
 ⬜ Quiz creation form (admin)
 
-📄 License
-MIT
-
-yaml
-Copy
-Edit
-
----
-
-Would you like me to generate a `vercel.json` (custom rewrite or base config), or push ins
