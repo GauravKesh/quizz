@@ -4,7 +4,7 @@ A modern quiz application built with **Next.js 14 App Router** that lets users t
 
 ## 🚀 Live Demo
 
-> Coming soon – Deployed via [Vercel](https://vercel.com)
+> [Live Preview](https://quizz-eta-ecru.vercel.app/)
 
 ---
 
@@ -109,26 +109,35 @@ A modern quiz application built with **Next.js 14 App Router** that lets users t
 
 ```bash
 # Clone repo
-git clone https://github.com/your-username/micro-quiz-platform.git
-cd micro-quiz-platform
+git clone https://github.com/gauravkesh/quizz.git
+cd quizz
 
+```
 # Install dependencies
 npm install
 
 # Create .env.local
+```bash
 echo "NEXT_PUBLIC_BASE_URL=http://localhost:3000" > .env.local
+```
 
 # Run dev server
+```bash
 npm run dev
+```
 Open http://localhost:3000
 
-🔐 API Endpoints (Mocked)
-Endpoint	Method	Description
-/api/categories	GET	Returns list of quiz categories
-/api/quizzes?category=x	GET	Returns quizzes in a category
-/api/quiz/:id	GET	Returns quiz details with questions
 
-🧠 Implementation Highlights
+### 📘 API Endpoints
+
+| Endpoint               | Method | Description                            |
+|------------------------|--------|----------------------------------------|
+| `/api/categories`      | GET    | Returns list of quiz categories        |
+| `/api/quizzes?category=x` | GET | Returns quizzes in the specified category `x` |
+| `/api/quiz/:id`        | GET    | Returns quiz details with questions    |
+
+
+## 🧠 Implementation Highlights
 ✅ Static Site Generation (SSG)
 Home page uses static data and pre-renders at build time.
 
@@ -141,10 +150,10 @@ Fully dynamic URLs via App Router ([category], [id]).
 ✅ SEO
 generateMetadata() used in all dynamic pages.
 
-🤖 AI Tooling
+### 🤖 AI Tooling
 Used ChatGPT 4 and Claude occasionally to brainstorm structure and patterns. Most of the implementation , including business logic, API design, and state management  was written and refined manually. AI was mainly used to speed up repetitive tasks or resolve minor issues.
 
-✅ Future Enhancements
+### ✅ Future Enhancements
 ⬜ Add timer per question
 
 ⬜ Persist user scores to local storage
