@@ -12,7 +12,7 @@ export default async function QuizCategoryPage({ params }) {
     const { category } = params;
 
     const res = await fetch(
-        `$/api/quizzes?category=${category}`,
+        `/api/quizzes?category=${category}`,
         { cache: 'no-store' }
     );
 
