@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Remove custom CSS variables if not used elsewhere */
+:root {
+  --foreground: #171717;
+}
+
+/* Optional: Remove or keep based on if you're using dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #ededed;
+  }
+}
+
+body {
+  /* background: var(--background); */  /* ❌ remove this */
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
