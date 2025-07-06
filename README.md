@@ -162,3 +162,45 @@ Used ChatGPT 4 and Claude occasionally to brainstorm structure and patterns. Mos
 
 ⬜ Quiz creation form (admin)
 
+
+### ✅ Testing
+
+All core functionalities have been thoroughly tested through unit and functional testing to ensure correctness, stability, and reliability.
+
+#### 🔹 Unit Tests
+
+- **Category API Fetching**  
+  Verified correct response structure and error handling for `/api/categories`.
+
+- **Quiz List by Category**  
+  Ensured `/api/quizzes?category=x` returns the correct quiz list per category.  
+  Tested with valid, invalid, and empty category queries.
+
+- **Quiz Details Retrieval**  
+  Validated `/api/quiz/:id` returns the correct questions and metadata.  
+  Checked response for valid and invalid quiz IDs.
+
+#### 🔹 Functional Tests
+
+- **Category Page Rendering**  
+  - UI displays all categories correctly.  
+  - Broken images or missing categories handled gracefully.
+
+- **Quiz Flow**  
+  - Start quiz → answer questions → see result flow tested end-to-end.  
+  - Edge cases like skipping questions and reloading mid-quiz were handled.
+
+- **Navigation & Routing**  
+  - Navigating between home, category, and quiz pages retains state properly.  
+  - 404 page tested for invalid routes.
+
+- **Responsiveness & UI Consistency**  
+  - Fully tested across desktop, tablet, and mobile viewports.
+
+- **Error Handling & Fallbacks**  
+  - Network/API errors are gracefully caught and user-friendly messages displayed.  
+  - Empty states (e.g., no quizzes for a category) are handled well.
+
+> All tests were manually verified with consistent results across development and production environments.
+
+
