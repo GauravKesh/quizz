@@ -2,6 +2,9 @@
 
 A modern quiz application built with **Next.js 15+** that lets users take short, topic-specific quizzes.
 
+## 🚀 Live Demo
+
+> [Live Preview](https://quizz-eta-ecru.vercel.app/)
 
 ---
 
@@ -21,10 +24,11 @@ A modern quiz application built with **Next.js 15+** that lets users take short,
 ## 🛠️ Tech Stack
 
 - **Framework:** Next.js 15
-- **Language:** JavaScript (ES6+)
+- **Language:** JavaScript
 - **Styling:** Tailwind CSS
 - **State:** React `useState`
 - **API:** Mocked with `app/api/`
+-  **Hosting:** Vercel
 
 ---
 
