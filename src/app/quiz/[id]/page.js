@@ -10,7 +10,7 @@ export async function generateMetadata({ params }) {
 export default async function QuizPage({ params }) {
     const { id } = params;
 
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/quiz/${id}`, {
+    const res = await fetch(`/api/quiz/${id}`, {
         cache: 'no-store',
     });
 
